@@ -230,6 +230,7 @@ function controlEightSlide() {
 function controlTenthSlide() {
   $('.slide--10__right-column-first h3').on('click', function() {
     $(this).addClass('ready');
+    $('.slide--10__right-column-first').addClass('ready');
 
     gsap.to('.slide--10__right-column-first-content .bottle.first', { opacity: 1, duration: 0.5, delay: 0.5, y: '0' });
     gsap.to('.slide--10__right-column-first-content .plus-small', { opacity: 1, duration: 0.5, delay: 0.85, y: '0' });
@@ -245,6 +246,7 @@ function controlTenthSlide() {
 
   $('.slide--10__right-column-second-content h3').on('click', function() {
     $(this).addClass('ready');
+    $('.slide--10__right-column-second').addClass('ready');
 
     gsap.to('.slide--10__right-column-second-content .bottle.first', { opacity: 1, duration: 0.5, delay: 0.5, y: '0' });
     gsap.to('.slide--10__right-column-second-content .bottle.second', { opacity: 1, duration: 0.5, delay: 0.85, y: '0' });
@@ -353,6 +355,7 @@ const slideActions = {
   15: () => {
     $('.slide--15__right-column-first h3').on('click', function() {
       $(this).addClass('ready');
+      $('.slide--15__right-column-first').addClass('ready');
   
       gsap.to('.slide--15__right-column-first-content .bottle.first', { opacity: 1, duration: 0.5, delay: 0.5, y: '0' });
       gsap.to('.slide--15__right-column-first-content .plus-small', { opacity: 1, duration: 0.5, delay: 0.85, y: '0' });
@@ -368,6 +371,7 @@ const slideActions = {
   
     $('.slide--15__right-column-second-content h3').on('click', function() {
       $(this).addClass('ready');
+      $('.slide--15__right-column-second').addClass('ready');
   
       gsap.to('.slide--15__right-column-second-content .bottle.first', { opacity: 1, duration: 0.5, delay: 0.5, y: '0' });
       gsap.to('.slide--15__right-column-second-content .bottle.second', { opacity: 1, duration: 0.5, delay: 0.85, y: '0' });
@@ -442,6 +446,7 @@ const slideActions = {
 
     $('.slide--21__right-column-first h3').on('click', function() {
       $(this).addClass('ready');
+      $('.slide--21__right-column-first').addClass('ready');
   
       gsap.to('.slide--21__right-column-first-content .bottle.first', { opacity: 1, duration: 0.5, delay: 0.5, y: '0' });
       gsap.to('.slide--21__right-column-first-content .plus-small', { opacity: 1, duration: 0.5, delay: 0.85, y: '0' });
@@ -457,6 +462,7 @@ const slideActions = {
   
     $('.slide--21__right-column-second-content h3').on('click', function() {
       $(this).addClass('ready');
+      $('.slide--21__right-column-second').addClass('ready');
   
       gsap.to('.slide--21__right-column-second-content .bottle.first', { opacity: 1, duration: 0.5, delay: 0.5, y: '0' });
       gsap.to('.slide--21__right-column-second-content .bottle.second', { opacity: 1, duration: 0.5, delay: 0.85, y: '0' });
@@ -477,7 +483,8 @@ const slideActions = {
 
     $('.slide--22__right-blocks-wrapper img.bottle-2').on('click', function() {
       $(this).addClass('ready');
-      gsap.to('.slide--22__right-blocks:nth-child(4)', { opacity: 1, duration: 0.5, delay: 0.5, x: '0' });
+      $('.slide--22__right-blocks-wrapper img.hand-pointer').addClass('ready');
+      gsap.to('.slide--22__right-blocks:nth-child(5)', { opacity: 1, duration: 0.5, delay: 0.5, x: '0' });
 
       lastSlideActionTimeout = setTimeout(() => {
         lastSlideAction();
@@ -546,6 +553,8 @@ function updateNavigationButtons(currentSlide) {
     case 18:
       break;
     case 20:
+      break;
+    case 21:
       break;
     case totalSlideAmount:
       $(prevSlideButton).removeClass(hiddenArrowClass);
