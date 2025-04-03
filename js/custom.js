@@ -479,6 +479,7 @@ const slideActions = {
     $('.slide--22__right-blocks:nth-child(2)').on('click', function() {
       $(this).addClass('ready');
       gsap.to('.slide--22__right-blocks-wrapper img.bottle', { opacity: 1, duration: 0.5, delay: 0.5 });
+      $('.slide--22__right-blocks-wrapper img.hand-pointer').removeClass('hidden')
     });
 
     $('.slide--22__right-blocks-wrapper img.bottle-2').on('click', function() {

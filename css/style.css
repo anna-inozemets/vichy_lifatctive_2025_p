@@ -4390,6 +4390,9 @@ p.slide-numbering.dark {
   pointer-events: none;
   transition: all 0.3s linear;
 }
+.slide--22__right-blocks-wrapper img.hand-pointer.hidden {
+  opacity: 0;;
+}
 .slide--22__right-blocks-wrapper img.hand-pointer.ready {
   opacity: 0;
 }
